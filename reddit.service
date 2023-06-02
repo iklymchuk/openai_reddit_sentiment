@@ -1,0 +1,12 @@
+[Unit]
+Description=My telegram bot
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart={PATH_TO_PYTHON} {PATH_TO_SCRIPT}
+WorkingDirectory={HOME_PROJECT_DIR}
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
